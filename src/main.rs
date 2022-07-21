@@ -3,7 +3,8 @@ extern crate whatlang;
 use std::io;
 use whatlang::detect;
 
-fn main() {
+
+fn read_text(){
     let mut text = String::new();
     println!("Please enter a text:");
     io::stdin()
@@ -16,4 +17,9 @@ fn main() {
     } else {
         println!("Cannot recognize a language :(");
     }
+
+}
+
+fn main() {
+    read_text();
 }
